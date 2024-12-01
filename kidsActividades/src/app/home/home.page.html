@@ -4,12 +4,10 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-searchbar  [(ngModel)]="filterText"  placeholder="Buscar actividades"></ion-searchbar>
-
+<ion-content [fullscreen]="true">
   <ion-grid>
     <ion-row>
-      <ion-col size="12"  size-sm="6" size-md="4"  size-lg="3" *ngFor="let  actividades of filterActivities()" >
+      <ion-col *ngFor="let user of users | async" size="12"  size-sm="6" size-md="4"  size-lg="3" *ngFor="let  actividades of filterActivities()" >
         <ion-card>
           <img [src]=" actividades.image" alt="{{  actividades.name }}" />
           <ion-card-header>
