@@ -7,7 +7,7 @@
 <ion-content [fullscreen]="true">
   <ion-grid>
     <ion-row>
-      <ion-col *ngFor="let user of users | async" size="12"  size-sm="6" size-md="4"  size-lg="3" *ngFor="let  actividades of filterActivities()" >
+      <ion-col *ngFor="let actividad of actividades | async" size="12"  size-sm="6" size-md="4"  size-lg="3" >
         <ion-card>
           <img [src]=" actividades.image" alt="{{  actividades.name }}" />
           <ion-card-header>

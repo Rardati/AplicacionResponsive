@@ -1,82 +1,82 @@
 [
     {
         "id": 1,
-        "name": "Pintura con dedos",
-        "description": "Explora la creatividad pintando con los dedos sobre papel.",
-        "age_range": "3-5 años",
-        "category": "Manualidades",
+        "nombre": "Pintura con dedos",
+        "descripción": "Explora la creatividad pintando con los dedos sobre papel.",
+        "rango_edad": "3-5 años",
+        "categoria": "Manualidades",
         "image": "https://example.com/images/finger-painting.jpg"
     },
     {
         "id": 2,
-        "name": "Carrera de sacos",
-        "description": "Diviértete al aire libre compitiendo en una carrera de sacos.",
-        "age_range": "6-10 años",
-        "category": "Juegos al aire libre",
+        "nombre": "Carrera de sacos",
+        "descripción": "Diviértete al aire libre compitiendo en una carrera de sacos.",
+        "rango_edad": "6-10 años",
+        "categoria": "Juegos al aire libre",
         "image": "https://example.com/images/sack-race.jpg"
     },
     {
         "id": 3,
-        "name": "Rompecabezas",
-        "description": "Mejora la concentración armando rompecabezas.",
-        "age_range": "4-8 años",
-        "category": "Juegos tranquilos",
+        "nombre": "Rompecabezas",
+        "descripción": "Mejora la concentración armando rompecabezas.",
+        "rango_edad": "4-8 años",
+        "categoria": "Juegos tranquilos",
         "image": "https://example.com/images/puzzle.jpg"
     },
     {
         "id": 4,
-        "name": "Globos de agua",
-        "description": "Diviértete lanzando globos llenos de agua en un día caluroso.",
-        "age_range": "5-10 años",
-        "category": "Juegos al aire libre",
+        "nombre": "Globos de agua",
+        "descripción": "Diviértete lanzando globos llenos de agua en un día caluroso.",
+        "rango_edad": "5-10 años",
+        "categoria": "Juegos al aire libre",
         "image": "https://example.com/images/water-balloons.jpg"
     },
     {
         "id": 5,
-        "name": "Teatro de títeres",
-        "description": "Crea una historia y realiza una obra con títeres caseros.",
-        "age_range": "6-9 años",
-        "category": "Creatividad",
+        "nombre": "Teatro de títeres",
+        "descripción": "Crea una historia y realiza una obra con títeres caseros.",
+        "rango_edad": "6-9 años",
+        "categoria": "Creatividad",
         "image": "https://example.com/images/puppet-theater.jpg"
     },
     {
         "id": 6,
-        "name": "Búsqueda del tesoro",
-        "description": "Organiza una búsqueda del tesoro con pistas y premios.",
-        "age_range": "7-12 años",
-        "category": "Juegos al aire libre",
+        "nombre": "Búsqueda del tesoro",
+        "descripción": "Organiza una búsqueda del tesoro con pistas y premios.",
+        "rango_edad": "7-12 años",
+        "categoria": "Juegos al aire libre",
         "image": "https://example.com/images/treasure-hunt.jpg"
     },
     {
         "id": 7,
-        "name": "Reciclaje creativo",
-        "description": "Usa materiales reciclables para construir juguetes o decoraciones.",
-        "age_range": "4-10 años",
-        "category": "Manualidades",
+        "nombre": "Reciclaje creativo",
+        "descripción": "Usa materiales reciclables para construir juguetes o decoraciones.",
+        "rango_edad": "4-10 años",
+        "categoria": "Manualidades",
         "image": "https://example.com/images/recycling-crafts.jpg"
     },
     {
         "id": 8,
-        "name": "Danza improvisada",
-        "description": "Pon música y deja que los niños se muevan y bailen libremente.",
-        "age_range": "3-8 años",
-        "category": "Actividades físicas",
+        "nombre": "Danza improvisada",
+        "descripción": "Pon música y deja que los niños se muevan y bailen libremente.",
+        "rango_edad": "3-8 años",
+        "categoria": "Actividades físicas",
         "image": "https://example.com/images/free-dance.jpg"
     },
     {
         "id": 9,
-        "name": "Jardinería para niños",
-        "description": "Planta flores o vegetales en pequeños maceteros.",
-        "age_range": "5-10 años",
-        "category": "Educativo",
+        "nombre": "Jardinería para niños",
+        "descripción": "Planta flores o vegetales en pequeños maceteros.",
+        "age_rangrango_edade": "5-10 años",
+        "categoria": "Educativo",
         "image": "https://example.com/images/kids-gardening.jpg"
     },
     {
         "id": 10,
-        "name": "Construcción con bloques",
-        "description": "Deja que los niños construyan estructuras con bloques o piezas LEGO.",
-        "age_range": "3-12 años",
-        "category": "Juegos tranquilos",
-        "image": "https://example.com/images/block-building.jpg"
+        "nombre": "Construcción con bloques",
+        "descripción": "Deja que los niños construyan estructuras con bloques o piezas LEGO.",
+        "rango_edad": "3-12 años",
+        "categoria": "Juegos tranquilos",
+        "imagen": "https://example.com/images/block-building.jpg"
     }
 ]
