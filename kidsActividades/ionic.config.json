@@ -1,0 +1,7 @@
+{
+  "name": "kidsActividades",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
