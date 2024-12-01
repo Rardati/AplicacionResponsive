@@ -2,7 +2,7 @@
     {
         "id": 1,
         "nombre": "Pintura con dedos",
-        "descripción": "Explora la creatividad pintando con los dedos sobre papel.",
+        "descripcion": "Explora la creatividad pintando con los dedos sobre papel.",
         "rango_edad": "3-5 años",
         "categoria": "Manualidades",
         "imagen": "https://example.com/images/finger-painting.jpg"
@@ -10,7 +10,7 @@
     {
         "id": 2,
         "nombre": "Carrera de sacos",
-        "descripción": "Diviértete al aire libre compitiendo en una carrera de sacos.",
+        "descripcion": "Diviértete al aire libre compitiendo en una carrera de sacos.",
         "rango_edad": "6-10 años",
         "categoria": "Juegos al aire libre",
         "imagen": "https://example.com/images/sack-race.jpg"
@@ -18,7 +18,7 @@
     {
         "id": 3,
         "nombre": "Rompecabezas",
-        "descripción": "Mejora la concentración armando rompecabezas.",
+        "descripcion": "Mejora la concentración armando rompecabezas.",
         "rango_edad": "4-8 años",
         "categoria": "Juegos tranquilos",
         "imagen": "https://example.com/images/puzzle.jpg"
@@ -26,7 +26,7 @@
     {
         "id": 4,
         "nombre": "Globos de agua",
-        "descripción": "Diviértete lanzando globos llenos de agua en un día caluroso.",
+        "descripcion": "Diviértete lanzando globos llenos de agua en un día caluroso.",
         "rango_edad": "5-10 años",
         "categoria": "Juegos al aire libre",
         "imagen": "https://example.com/images/water-balloons.jpg"
@@ -34,7 +34,7 @@
     {
         "id": 5,
         "nombre": "Teatro de títeres",
-        "descripción": "Crea una historia y realiza una obra con títeres caseros.",
+        "descripcion": "Crea una historia y realiza una obra con títeres caseros.",
         "rango_edad": "6-9 años",
         "categoria": "Creatividad",
         "imagen": "https://example.com/images/puppet-theater.jpg"
@@ -42,7 +42,7 @@
     {
         "id": 6,
         "nombre": "Búsqueda del tesoro",
-        "descripción": "Organiza una búsqueda del tesoro con pistas y premios.",
+        "descripcion": "Organiza una búsqueda del tesoro con pistas y premios.",
         "rango_edad": "7-12 años",
         "categoria": "Juegos al aire libre",
         "imagen": "https://example.com/images/treasure-hunt.jpg"
@@ -50,7 +50,7 @@
     {
         "id": 7,
         "nombre": "Reciclaje creativo",
-        "descripción": "Usa materiales reciclables para construir juguetes o decoraciones.",
+        "descripcion": "Usa materiales reciclables para construir juguetes o decoraciones.",
         "rango_edad": "4-10 años",
         "categoria": "Manualidades",
         "imagen": "https://example.com/images/recycling-crafts.jpg"
@@ -58,7 +58,7 @@
     {
         "id": 8,
         "nombre": "Danza improvisada",
-        "descripción": "Pon música y deja que los niños se muevan y bailen libremente.",
+        "descripcion": "Pon música y deja que los niños se muevan y bailen libremente.",
         "rango_edad": "3-8 años",
         "categoria": "Actividades físicas",
         "imagen": "https://example.com/images/free-dance.jpg"
@@ -66,7 +66,7 @@
     {
         "id": 9,
         "nombre": "Jardinería para niños",
-        "descripción": "Planta flores o vegetales en pequeños maceteros.",
+        "descripcion": "Planta flores o vegetales en pequeños maceteros.",
         "age_rangrango_edade": "5-10 años",
         "categoria": "Educativo",
         "imagen": "https://example.com/images/kids-gardening.jpg"
@@ -74,7 +74,7 @@
     {
         "id": 10,
         "nombre": "Construcción con bloques",
-        "descripción": "Deja que los niños construyan estructuras con bloques o piezas LEGO.",
+        "descripcion": "Deja que los niños construyan estructuras con bloques o piezas LEGO.",
         "rango_edad": "3-12 años",
         "categoria": "Juegos tranquilos",
         "imagen": "https://example.com/images/block-building.jpg"
