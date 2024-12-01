@@ -5,7 +5,7 @@
         "descripción": "Explora la creatividad pintando con los dedos sobre papel.",
         "rango_edad": "3-5 años",
         "categoria": "Manualidades",
-        "image": "https://example.com/images/finger-painting.jpg"
+        "imagen": "https://example.com/images/finger-painting.jpg"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "descripción": "Diviértete al aire libre compitiendo en una carrera de sacos.",
         "rango_edad": "6-10 años",
         "categoria": "Juegos al aire libre",
-        "image": "https://example.com/images/sack-race.jpg"
+        "imagen": "https://example.com/images/sack-race.jpg"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "descripción": "Mejora la concentración armando rompecabezas.",
         "rango_edad": "4-8 años",
         "categoria": "Juegos tranquilos",
-        "image": "https://example.com/images/puzzle.jpg"
+        "imagen": "https://example.com/images/puzzle.jpg"
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "descripción": "Diviértete lanzando globos llenos de agua en un día caluroso.",
         "rango_edad": "5-10 años",
         "categoria": "Juegos al aire libre",
-        "image": "https://example.com/images/water-balloons.jpg"
+        "imagen": "https://example.com/images/water-balloons.jpg"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "descripción": "Crea una historia y realiza una obra con títeres caseros.",
         "rango_edad": "6-9 años",
         "categoria": "Creatividad",
-        "image": "https://example.com/images/puppet-theater.jpg"
+        "imagen": "https://example.com/images/puppet-theater.jpg"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "descripción": "Organiza una búsqueda del tesoro con pistas y premios.",
         "rango_edad": "7-12 años",
         "categoria": "Juegos al aire libre",
-        "image": "https://example.com/images/treasure-hunt.jpg"
+        "imagen": "https://example.com/images/treasure-hunt.jpg"
     },
     {
         "id": 7,
@@ -53,7 +53,7 @@
         "descripción": "Usa materiales reciclables para construir juguetes o decoraciones.",
         "rango_edad": "4-10 años",
         "categoria": "Manualidades",
-        "image": "https://example.com/images/recycling-crafts.jpg"
+        "imagen": "https://example.com/images/recycling-crafts.jpg"
     },
     {
         "id": 8,
@@ -61,7 +61,7 @@
         "descripción": "Pon música y deja que los niños se muevan y bailen libremente.",
         "rango_edad": "3-8 años",
         "categoria": "Actividades físicas",
-        "image": "https://example.com/images/free-dance.jpg"
+        "imagen": "https://example.com/images/free-dance.jpg"
     },
     {
         "id": 9,
@@ -69,7 +69,7 @@
         "descripción": "Planta flores o vegetales en pequeños maceteros.",
         "age_rangrango_edade": "5-10 años",
         "categoria": "Educativo",
-        "image": "https://example.com/images/kids-gardening.jpg"
+        "imagen": "https://example.com/images/kids-gardening.jpg"
     },
     {
         "id": 10,
