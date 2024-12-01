@@ -1,20 +1,27 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>Actividades para Niños</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-searchbar  [(ngModel)]="filterText"  placeholder="Buscar actividades"></ion-searchbar>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12"  size-sm="6" size-md="4"  size-lg="3" *ngFor="let  actividades of filterActivities()" >
+        <ion-card>
+          <img [src]=" actividades.image" alt="{{  actividades.name }}" />
+          <ion-card-header>
+            <ion-card-title>{{ actividades.name }}</ion-card-title>
+            <ion-card-subtitle>{{  actividades.category }}</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <p><strong>Rango de edad:</strong> {{  actividades.age_range }}</p>
+            <p>{{  actividades.description }}</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
