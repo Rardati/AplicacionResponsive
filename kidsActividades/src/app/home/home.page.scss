@@ -1,6 +1,5 @@
 #container {
   text-align: center;
-
   position: absolute;
   left: 0;
   right: 0;
@@ -8,20 +7,78 @@
   transform: translateY(-50%);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  height: 400px;
+  margin: 10px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+ion-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
 }
 
-#container a {
-  text-decoration: none;
+ion-avatar {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+ion-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+ion-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+ion-card-subtitle {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Estilos por categoría */
+.manualidades {
+  border-left: 5px solid #f5a623;
+}
+
+.juegos-al-aire-libre {
+  border-left: 5px solid #4caf50;
+}
+
+.juegos-tranquilos {
+  border-left: 5px solid #03a9f4;
+}
+
+.creatividad {
+  border-left: 5px solid #e91e63;
+}
+
+.educativo {
+  border-left: 5px solid #9c27b0;
+}
+
+.actividades-fisicas {
+  border-left: 5px solid #ff9800;
 }

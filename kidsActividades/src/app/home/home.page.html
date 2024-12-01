@@ -4,21 +4,27 @@
   </ion-toolbar>
 </ion-header>
 
-
 <ion-content [fullscreen]="true">
   <ion-grid>
+    <!-- Barra de búsqueda -->
     <ion-row>
-      <ion-col *ngFor="let actividad of actividades | async" size="12"  size-sm="6" size-md="4"  size-lg="3" >
-        <ion-card>
+      <ion-col size="12">
+        <ion-searchbar [(ngModel)]="searchText" (ionInput)="filterItems()" placeholder="Buscar actividades..."></ion-searchbar>
+      </ion-col>
+    </ion-row>
+    <!-- Tarjetas de actividades -->
+    <ion-row>
+      <ion-col *ngFor="let actividad of displayedActivities" size="12" size-sm="6" size-md="4" size-lg="3">
+        <ion-card [ngClass]="getCategoryClass(actividad.categoria)">
           <ion-card-content>
             <ion-avatar>
-              <img [src]=" actividades.imagen" alt="{{  actividades.nombre }}" />
+              <img [src]="actividad.imagen" alt="{{ actividad.nombre }}" />
             </ion-avatar>
-            <ion-card-title>{{ actividades.nombre }}</ion-card-title>
-            <ion-card-subtitle>{{  actividades.categoria }}</ion-card-subtitle>
-          
-            <p><strong>Rango de edad:</strong> {{  actividades.rango_edad }}</p>
-            <p>{{  actividades.descripcion }}</p>
+            <ion-card-title>{{ actividad.nombre }}</ion-card-title>
+            <ion-card-subtitle>{{ actividad.categoria }}</ion-card-subtitle>
+
+            <p><strong>Rango de edad:</strong> {{ actividad.rango_edad }}</p>
+            <p>{{ actividad.descripcion }}</p>
           </ion-card-content>
         </ion-card>
       </ion-col>
