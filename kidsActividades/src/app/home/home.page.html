@@ -11,7 +11,7 @@
       <ion-col size="12">
         <ion-searchbar [(ngModel)]="searchText" (ionInput)="filterItems()" placeholder="Buscar actividades..."></ion-searchbar>
       </ion-col>
-    </ion-row>
+    </ion-row> 
     <!-- Tarjetas de actividades -->
     <ion-row>
       <ion-col *ngFor="let actividad of displayedActivities" size="12" size-sm="6" size-md="4" size-lg="3">
