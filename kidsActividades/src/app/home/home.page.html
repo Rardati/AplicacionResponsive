@@ -14,8 +14,8 @@
     </ion-row> 
     <!-- Tarjetas de actividades -->
     <ion-row>
-      <ion-col *ngFor="let actividad of displayedActivities" size="12" size-sm="6" size-md="4" size-lg="3">
-        <ion-card ngIf="actividad.categoria">
+      <ion-col *ngFor="let actividad of displayedActivities" >
+        <ion-card ngIf="actividad.categoria == 'manualidades' " size="12" size-sm="6" size-md="4" size-lg="3">
           <ion-card-content>
             <ion-avatar>
               <img [src]="actividad.imagen" alt="{{ actividad.nombre }}" />
