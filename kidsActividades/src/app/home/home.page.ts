@@ -6,20 +6,17 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage implements OnInit {
+export class HomePage {
+  
+  variable;
   searchText: string = '';
   allActivities: any[] = []; // Todas las actividades
   displayedActivities: any[] = []; // Actividades filtradas
 
-  constructor(private httpClient: HttpClient) {}
+  constructor(private httpClient: HttpClient) {
 
-  ngOnInit() {
-    this.httpClient
-      .get('https://github.com/Rardati/AplicacionResponsive/blob/main/actividades.json')
-      .subscribe((data: any[]) => {
-        this.allActivities = data; // Guardar todas las actividades
-        this.displayedActivities = [...data]; // Mostrar todas inicialmente
-      });
+    this.variable = this.httpClient.get('https://github.com/Rardati/AplicacionResponsive/blob/main/actividades.json');
+      
   }
 
   // Filtrar actividades por texto ingresado
