@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-home',
@@ -8,42 +9,16 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomePage {
   
-  variable;
-  searchText: string = '';
-  allActivities: any[] = []; // Todas las actividades
-  displayedActivities: any[] = []; // Actividades filtradas
+    
+  actividades: any; 
+  filtro: string = '';
+  
 
   constructor(private httpClient: HttpClient) {
 
-    this.variable = this.httpClient.get('https://github.com/Rardati/AplicacionResponsive/blob/main/actividades.json');
+    this.actividades = this.httpClient.get('https://github.com/Rardati/AplicacionResponsive/blob/main/actividades.json').pipe(map((res: any) => res));  
       
   }
 
-  // Filtrar actividades por texto ingresado
-  filterItems() {
-    const searchTextLower = this.searchText.toLowerCase();
-    this.displayedActivities = this.allActivities.filter((actividad) =>
-      actividad.nombre.toLowerCase().includes(searchTextLower)
-    );
-  }
-
-  // Obtener clase CSS según la categoría
-  getCategoryClass(category: string): string {
-    switch (category) {
-      case 'Manualidades':
-        return 'manualidades';
-      case 'Juegos al aire libre':
-        return 'juegos-al-aire-libre';
-      case 'Juegos tranquilos':
-        return 'juegos-tranquilos';
-      case 'Creatividad':
-        return 'creatividad';
-      case 'Educativo':
-        return 'educativo';
-      case 'Actividades físicas':
-        return 'actividades-fisicas';
-      default:
-        return '';
-    }
-  }
+   
 }

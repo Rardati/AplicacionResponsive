@@ -1,33 +1,36 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Kids Actividades</ion-title>
+    <ion-title>
+      Kids Actividades
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-grid>
-    <!-- Barra de búsqueda -->
-    <ion-row>
-      <ion-col size="12">
-        <ion-searchbar [(ngModel)]="searchText" (ionInput)="filterItems()" placeholder="Buscar actividades..."></ion-searchbar>
-      </ion-col>
-    </ion-row> 
-    <!-- Tarjetas de actividades -->
-    <ion-row>
-      <ion-col *ngFor="let actividad of displayedActivities" >
-        <ion-card ngIf="actividad.categoria == 'manualidades' " size="12" size-sm="6" size-md="4" size-lg="3">
-          <ion-card-content>
-            <ion-avatar>
-              <img [src]="actividad.imagen" alt="{{ actividad.nombre }}" />
-            </ion-avatar>
-            <ion-card-title>{{ actividad.nombre }}</ion-card-title>
-            <ion-card-subtitle>{{ actividad.categoria }}</ion-card-subtitle>
+<ion-content>
+  <!-- Barra de búsqueda -->
+  <ion-input [(ngModel)]="filtro" placeholder="Buscar actividades...">
+  </ion-input>
 
-            <p><strong>Rango de edad:</strong> {{ actividad.rango_edad }}</p>
-            <p>{{ actividad.descripcion }}</p>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
+  <ion-grid>
+    <ion-row>
+      <!-- Itera sobre la lista de actividades -->
+      <ng-container *ngFor="let actividad of actividades | async">
+        <!-- Solo muestra las actividades que coincidan con el filtro y la categoría 'manualidades' -->
+        <ion-col *ngIf="filtro === '' || actividad.nombre.toLowerCase().includes(filtro.toLowerCase())" 
+                 size="12" size-md="6" size-lg="4" size-xl="3">
+          <ion-card *ngIf="actividad.categoria == 'manualidades'">
+            <img [src]="actividad.imagen" alt="{{ actividad.nombre }}">
+            <ion-card-header>
+              <ion-card-title>{{ actividad.nombre }}</ion-card-title>
+              <ion-card-subtitle>{{ actividad.categoria }}</ion-card-subtitle>
+            </ion-card-header>
+            <ion-card-content>
+              <p><strong>Rango de edad:</strong> {{ actividad.rango_edad }}</p>
+              <p>{{ actividad.descripcion }}</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ng-container>
     </ion-row>
   </ion-grid>
 </ion-content>
