@@ -15,17 +15,22 @@
       <!-- Itera sobre la lista de actividades -->
       <ng-container *ngFor="let actividad of actividades | async">
         <!-- Solo muestra las actividades que coincidan con la edad ingresada -->
-        <ion-col *ngIf="filtro === '' || coincideConEdad(filtro, actividad.rango_edad)"
+        <ion-col *ngIf="filtro == '' || actividad.rango_edad()"
                  size="12" size-md="6" size-lg="4" size-xl="3">
           <ion-card>
             <img [src]="actividad.imagen" alt="{{ actividad.nombre }}">
+
             <ion-card-header>
               <ion-card-title>{{ actividad.nombre }}</ion-card-title>
               <ion-card-subtitle>{{ actividad.categoria }}</ion-card-subtitle>
             </ion-card-header>
+
             <ion-card-content>
+              <p><strong>Nombre:</strong>{{ actividad.nombre }}</p>
+              <p><strong>Descripcion:</strong>{{ actividad.descripcion }}</p>
               <p><strong>Rango de edad:</strong> {{ actividad.rango_edad }}</p>
-              <p>{{ actividad.descripcion }}</p>
+              <p><strong>Categoria:</strong>{{ actividad.categoria }}</p>
+              <p>{{ actividad.imagen }}</p>
             </ion-card-content>
           </ion-card>
         </ion-col>
