@@ -121,12 +121,14 @@ ion-input {
   }
 }
 
+
 /* Mostrar elementos solo en orientación vertical */
 @media (orientation: portrait) {
   .landscape-only {
     display: none;
   }
 }
+
 
 /* Mostrar elementos solo en orientación horizontal */
 @media (orientation: landscape) {

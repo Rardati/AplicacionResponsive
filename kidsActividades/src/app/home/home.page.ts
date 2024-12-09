@@ -16,7 +16,7 @@ export class HomePage {
 
   constructor(private httpClient: HttpClient) {
 
-    this.actividades = this.httpClient.get('https://github.com/Rardati/AplicacionResponsive/blob/main/actividades.json');
+    this.actividades = this.httpClient.get('https://github.com/Rardati/AplicacionResponsive/blob/main/DocJSON/actividades.json');
       
   }
 
