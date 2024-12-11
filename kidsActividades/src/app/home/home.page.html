@@ -15,7 +15,7 @@
       <!-- Itera sobre la lista de actividades -->
       <ng-container *ngFor="let actividad of actividades | async">
         <!-- Solo muestra las actividades que coincidan con el rango de edad ingresado -->
-        <ion-col *ngIf="filtro == '' || filtrarPorRangoEdad(actividad)"
+        <ion-col *ngIf="filtro == '' || actividad.rango_edad.includes(filtro)"
                  size="12" size-md="6" size-lg="4" size-xl="3">
           <ion-card>
 
