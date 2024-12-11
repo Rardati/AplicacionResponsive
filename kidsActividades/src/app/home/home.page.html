@@ -8,18 +8,21 @@
 
 <ion-content [fullscreen]="true" >
   <!-- Barra de búsqueda -->
-  <ion-searchbar [(ngModel)]="searchText"(ionInput)="filtro" placeholder="Ingresa el rango ('3-5 años')" ></ion-searchbar> 
-  <ion-input ></ion-input>
+  <ion-input  [(ngModel)]="searchText" placeholder="Ingresa el rango ('3-5 años')"></ion-input>
 
   <ion-grid>
     <ion-row>
       <!-- Itera sobre la lista de actividades -->
       <ng-container *ngFor="let actividad of actividades | async">
         <!-- Solo muestra las actividades que coincidan con la edad ingresada -->
-        <ion-col *ngIf="filtro == '' || actividad.rango_edad"
+        <ion-col *ngIf="searchText == '' || actividad.rango_edad == searchText"
                  size="12" size-md="6" size-lg="4" size-xl="3">
           <ion-card>
-            <img [src]="actividad.imagen" alt="{{ actividad.nombre }}">
+
+            <ion-card-content>
+              <ion-avatar>
+            <img [src]="actividad.imagen" >
+            </ion-avatar>
 
             <ion-card-header>
               <ion-card-title>{{ actividad.nombre }}</ion-card-title>
