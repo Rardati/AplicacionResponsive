@@ -67,7 +67,7 @@
         "id": 9,
         "nombre": "Jardinería para niños",
         "descripcion": "Planta flores o vegetales en pequeños maceteros.",
-        "age_rangrango_edade": "5-10 años",
+        "rango_edad": "5-10 años",
         "categoria": "Educativo",
         "imagen": "https://galiciangarden.com/wp-content/uploads/e_PORTADA_GARDENKIDS.jpg"
     },
