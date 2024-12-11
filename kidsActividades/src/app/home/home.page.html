@@ -8,7 +8,8 @@
 
 <ion-content [fullscreen]="true" >
   <!-- Barra de búsqueda -->
-  <ion-input [(ngModel)]="filtro" placeholder="Ingresa el rango ('3-5 años')"></ion-input>
+  <ion-searchbar [(ngModel)]="searchText"></ion-searchbar> 
+  <ion-input (ionInput)="filtro" placeholder="Ingresa el rango ('3-5 años')"></ion-input>
 
   <ion-grid>
     <ion-row>

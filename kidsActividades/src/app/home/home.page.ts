@@ -11,6 +11,8 @@ export class HomePage {
   
     
   actividades: any; 
+ 
+  searchText: string = ''; 
   filtro: string = '';
   
 
