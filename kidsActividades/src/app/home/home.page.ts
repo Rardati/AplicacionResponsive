@@ -11,9 +11,8 @@ export class HomePage {
   
     
   actividades: any; 
- 
   searchText: string = ''; 
-  filtro: string = '';
+  
   
 
   constructor(private httpClient: HttpClient) {
